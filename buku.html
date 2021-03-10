@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GUEST BOOK</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body background="bg.jpg">
+ 
+   <div class="container">		
+   <div align="center"><strong><font color="white" size="20" face="Courier New, Courier, mono">BUKU TAMU </font></strong></div>
+<form action="proses.php" method="post">
+  <div class="form-group">
+    <label for="nama" ><font color="white">Nama Lengkap:</font></label>
+    <input type="text" name="nama" class="form-control" id="nama">
+  </div>
+  <div class="form-group">
+    <label for="alamat"><font color="white">Alamat:</font></label>
+    <input type="text" name="alamat" class="form-control" id="alamat">
+  </div>
+  <div class="form-group">
+  <label for="jk"><font color="white">Jenis Kelamin:</font></label>
+  <select class="form-control" name="jk" id="jk">
+    <option>Laki-laki</option>
+    <option>Perempuan</option>
+    </select>
+</div>
+  <div class="form-group">
+    <label for="komen"><font color="white">Komentar:</font></label>
+    <textarea class="form-control" name="komen" rows="5" id="komen"></textarea>
+  </div>
+    <button type="submit" name="Submit" class="btn btn-primary">Submit</button>
+    <button type="reset" name="Submit2" class="btn btn-danger">Reset</button>
+</form>
+   </div>
+ 
+</body>
+</html>
